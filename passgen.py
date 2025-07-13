@@ -31,18 +31,18 @@ def main():
             
              
             if longitud < 8:
-                print("⚠️ Para mayor seguridad, se recomienda una longitud de al menos 8 caracteres.")
+                print("Para mayor seguridad, se recomienda una longitud de al menos 8 caracteres.")
             if longitud <= 0:
-                print("❌ Error: La longitud debe ser un número positivo. Inténtalo de nuevo.")
+                print(" Error: La longitud debe ser un número positivo. Inténtalo de nuevo.")
                 continue
  
             contraseña_generada = generar_contraseña(longitud)
-            print("\n✅ Tu contraseña segura es: " + contraseña_generada)
+            print("\n Tu contraseña segura es: " + contraseña_generada)
             break  
 
         except ValueError:
              
-            print("❌ Error: Entrada no válida. Por favor, ingresa solo números.")
+            print("Error: Entrada no válida. Por favor, ingresa solo números.")
 
  
 if __name__ == "__main__":
